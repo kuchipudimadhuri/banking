@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apna Bank Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <div class="navbar">
+    <h2>Apna Bank - Welcome, <span id="userName"></span></h2>
+    <button id="logoutBtn">Logout</button>
+  </div>
+
+  <!-- Dashboard -->
+  <div class="dashboard">
+    <!-- Balance -->
+    <div class="card">
+      <h3>Account Balance</h3>
+      <p id="balance">₹ 0</p>
+    </div>
+
+    <!-- Transaction History -->
+    <div class="card">
+      <h3>Transaction History</h3>
+      <ul id="transactions">
+        <li>No transactions found</li>
+      </ul>
+    </div>
+
+    <!-- Transfer Money -->
+    <div class="card">
+      <h3>Transfer Money</h3>
+      <form id="transferForm">
+        <input type="text" id="toUser" placeholder="Recipient Username" required>
+        <input type="number" id="amount" placeholder="Amount" required>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+
+    <!-- Deposit -->
+    <div class="card">
+      <h3>Deposit Money</h3>
+      <form id="depositForm">
+        <input type="number" id="depositAmount" placeholder="Amount" required>
+        <button type="submit">Deposit</button>
+      </form>
+    </div>
+
+    <!-- Loans -->
+    <div class="card">
+      <h3>Loan Information</h3>
+      <p id="loanStatus">No active loans</p>
+    </div>
+
+    <!-- Credit/Debit Cards -->
+    <div class="card">
+      <h3>Credit/Debit Cards</h3>
+      <p id="cardInfo">No cards linked</p>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
